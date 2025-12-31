@@ -1,0 +1,27 @@
+[
+  {
+    "id": "example_relic",
+    "type": "Relic",
+    "maxStack": 1,
+    "tags": ["Fire"],
+    "rarity": "Rare",
+    "isRunScoped": true
+  },
+  {
+    "id": "example_consumable",
+    "type": "Consumable",
+    "maxStack": 10,
+    "tags": [],
+    "rarity": "Common",
+    "isRunScoped": true
+  },
+  {
+    "id": "example_material",
+    "type": "Material",
+    "maxStack": 99,
+    "tags": ["Ice", "Gravity"],
+    "rarity": "Uncommon",
+    "isRunScoped": false
+  }
+]
+

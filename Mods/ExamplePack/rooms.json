@@ -1,0 +1,9 @@
+[
+  {
+    "id": "example_room",
+    "name": "Example Room",
+    "levelDataPath": "Levels/example_room.json",
+    "bounds": { "x": 0, "y": 0, "width": 640, "height": 360 }
+  }
+]
+

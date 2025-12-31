@@ -1,0 +1,7 @@
+{
+  "techniqueProcCooldown": 1.5,
+  "maxProcsPerSection": 3,
+  "flowBonusPerProc": 0.05,
+  "rewardQualityDelta": 1
+}
+

@@ -1,0 +1,30 @@
+{
+  "fastStage": {
+    "minSections": 3,
+    "maxSections": 6,
+    "preferredLengthClass": ["SHORT", "MED"],
+    "timeBonusThresholds": [30, 60, 90, 120],
+    "flowBonusIdleThreshold": 2.0
+  },
+  "slowStage": {
+    "minSections": 2,
+    "maxSections": 4,
+    "preferredLengthClass": ["MED", "LONG"],
+    "maxSidePockets": 3,
+    "secretQuotaPerStage": 5,
+    "bonusDoorQuotaPerStage": 2
+  },
+  "difficultyRamp": {
+    "maxConsecutiveHighStars": 1,
+    "teachStars": [1],
+    "testStars": [2, 3],
+    "twistStars": [3, 4],
+    "finaleStars": [4, 5]
+  },
+  "currency": {
+    "rewardThresholdInterval": 100,
+    "deathPenaltyPercent": 50,
+    "flagConsumeRewardMultiplier": 1.5
+  }
+}
+

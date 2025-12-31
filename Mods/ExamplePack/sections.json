@@ -1,0 +1,79 @@
+[
+  {
+    "id": "fast_runline_01",
+    "pacingTag": "FAST",
+    "biomeTags": ["A"],
+    "tierMin": 1,
+    "tierMax": 5,
+    "difficultyStars": 2,
+    "lengthClass": "SHORT",
+    "traversalMode": "RUNLINE",
+    "interactionTags": ["Enemies", "Obstacles"],
+    "connectorsIn": ["ground"],
+    "connectorsOut": ["ground"],
+    "quotas": {
+      "secretSlots": 0,
+      "bonusDoorSlots": 0,
+      "chestSlots": 2
+    },
+    "levelDataPath": "Sections/fast_runline_01.json"
+  },
+  {
+    "id": "fast_vehicle_minecart",
+    "pacingTag": "FAST",
+    "biomeTags": ["A", "B"],
+    "tierMin": 2,
+    "tierMax": 5,
+    "difficultyStars": 3,
+    "lengthClass": "MED",
+    "traversalMode": "VEHICLE",
+    "interactionTags": ["Enemies"],
+    "connectorsIn": ["ground"],
+    "connectorsOut": ["ground"],
+    "quotas": {
+      "secretSlots": 0,
+      "bonusDoorSlots": 0,
+      "chestSlots": 3
+    },
+    "levelDataPath": "Sections/fast_vehicle_minecart.json"
+  },
+  {
+    "id": "slow_exploration_ruins",
+    "pacingTag": "SLOW",
+    "biomeTags": ["A"],
+    "tierMin": 1,
+    "tierMax": 5,
+    "difficultyStars": 2,
+    "lengthClass": "MED",
+    "traversalMode": "OPEN_EXPLORATION",
+    "interactionTags": ["BonusDoor", "MinigamePortal"],
+    "connectorsIn": ["ground"],
+    "connectorsOut": ["ground"],
+    "quotas": {
+      "secretSlots": 3,
+      "bonusDoorSlots": 2,
+      "chestSlots": 5
+    },
+    "levelDataPath": "Sections/slow_exploration_ruins.json"
+  },
+  {
+    "id": "slow_carry_prop",
+    "pacingTag": "SLOW",
+    "biomeTags": ["B"],
+    "tierMin": 2,
+    "tierMax": 5,
+    "difficultyStars": 3,
+    "lengthClass": "LONG",
+    "traversalMode": "VERTICAL_ASCENT",
+    "interactionTags": ["CarryProp", "TeamUpRequired"],
+    "connectorsIn": ["ground"],
+    "connectorsOut": ["ground"],
+    "quotas": {
+      "secretSlots": 2,
+      "bonusDoorSlots": 1,
+      "chestSlots": 3
+    },
+    "levelDataPath": "Sections/slow_carry_prop.json"
+  }
+]
+

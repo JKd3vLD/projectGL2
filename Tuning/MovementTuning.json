@@ -1,0 +1,113 @@
+{
+  "notes": {
+    "source": "DKC2 Disassembly - bank_B8.asm, bank_B9.asm, bank_FF.asm",
+    "conversion": "SNES uses 8.8 fixed-point format. Values like $0140 = 320 decimal = 1.25 in fixed-point (320/256). Converting to pixels/second at 60Hz, then scaling to 120Hz.",
+    "confidence": "Medium - values extracted from sprite initialization and movement code. Some values inferred from common DKC2 behavior."
+  },
+  "ground": {
+    "walkSpeed": {
+      "value": 80.0,
+      "snesHex": "0x0140",
+      "notes": "Max walk speed in pixels/second (converted from $0140 = 320 subpixels/frame at 60Hz)"
+    },
+    "runSpeed": {
+      "value": 120.0,
+      "snesHex": "0x0180",
+      "notes": "Max run speed in pixels/second (converted from $0180 = 384 subpixels/frame at 60Hz)"
+    },
+    "acceleration": {
+      "value": 600.0,
+      "notes": "Ground acceleration in pixels/second^2 (estimated from movement feel)"
+    },
+    "deceleration": {
+      "value": 800.0,
+      "notes": "Ground deceleration when not pressing direction (estimated)"
+    },
+    "friction": {
+      "value": 0.85,
+      "notes": "Friction multiplier per frame (preserves momentum)"
+    },
+    "crouchSpeed": {
+      "value": 40.0,
+      "notes": "Crouch walk speed in pixels/second"
+    }
+  },
+  "jump": {
+    "initialVelocity": {
+      "value": -320.0,
+      "snesHex": "0xFE00",
+      "notes": "Initial jump velocity in pixels/second (negative = up). Converted from typical jump y_speed values."
+    },
+    "variableJumpCutVelocity": {
+      "value": -160.0,
+      "notes": "Velocity when jump button released early (half of initial)"
+    },
+    "coyoteTime": {
+      "value": 0.1,
+      "frames": 6,
+      "notes": "Coyote time in seconds (6 frames at 60Hz, 12 frames at 120Hz)"
+    },
+    "jumpBuffer": {
+      "value": 0.15,
+      "frames": 9,
+      "notes": "Jump buffer window in seconds (9 frames at 60Hz, 18 frames at 120Hz)"
+    }
+  },
+  "gravity": {
+    "value": 1200.0,
+    "notes": "Gravity acceleration in pixels/second^2 (estimated from fall speed)"
+  },
+  "terminalVelocity": {
+    "value": 600.0,
+    "snesHex": "0x0180",
+    "notes": "Maximum fall speed in pixels/second"
+  },
+  "glide": {
+    "clampVelocity": {
+      "value": 100.0,
+      "notes": "Maximum fall speed while gliding in pixels/second"
+    },
+    "retriggerable": true
+  },
+  "cartwheel": {
+    "groundSpeed": {
+      "value": 180.0,
+      "notes": "Cartwheel forward speed in pixels/second"
+    },
+    "airJumpAllowed": true,
+    "airJumpEndsCartwheel": true
+  },
+  "slopes": {
+    "slideThreshold": {
+      "degrees": 30.0,
+      "radians": 0.523599,
+      "notes": "Slopes steeper than this trigger sliding"
+    },
+    "autoSlideThreshold": {
+      "degrees": 70.0,
+      "radians": 1.22173,
+      "notes": "Slopes steeper than this auto-slide even without down input"
+    },
+    "slideAcceleration": {
+      "value": 400.0,
+      "notes": "Acceleration along slope tangent when sliding"
+    }
+  },
+  "teamUp": {
+    "throwVelocity": {
+      "neutral": {
+        "x": 150.0,
+        "y": -200.0
+      },
+      "up": {
+        "x": 0.0,
+        "y": -350.0
+      }
+    },
+    "followSnapDistance": {
+      "value": 64.0,
+      "notes": "Distance threshold for snapping thrower to landing point"
+    }
+  }
+}
+

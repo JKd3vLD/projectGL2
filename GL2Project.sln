@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GL2Engine", "GL2Engine.csproj", "{33B0F6DB-2963-862E-0CD4-541567F9441E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33B0F6DB-2963-862E-0CD4-541567F9441E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B0F6DB-2963-862E-0CD4-541567F9441E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B0F6DB-2963-862E-0CD4-541567F9441E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B0F6DB-2963-862E-0CD4-541567F9441E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7ED4B32D-7EE7-44C5-8367-8F8BF94429C6}
+	EndGlobalSection
+EndGlobal

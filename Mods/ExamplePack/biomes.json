@@ -1,0 +1,11 @@
+[
+  {
+    "id": "example_biome",
+    "name": "Example Biome",
+    "description": "An example biome for modding",
+    "themeColor": "#FF6B6B",
+    "difficultyMultiplier": 1.0,
+    "availableStages": ["example_stage_1", "example_stage_2"]
+  }
+]
+

@@ -1,0 +1,85 @@
+{
+  "blocks": [
+    {
+      "blockId": "ground_flat",
+      "gridX": 0,
+      "gridY": 4,
+      "rotation": 0,
+      "flip": false,
+      "variant": 0
+    },
+    {
+      "blockId": "ground_flat",
+      "gridX": 1,
+      "gridY": 4,
+      "rotation": 0,
+      "flip": false,
+      "variant": 0
+    },
+    {
+      "blockId": "ground_flat",
+      "gridX": 2,
+      "gridY": 4,
+      "rotation": 0,
+      "flip": false,
+      "variant": 0
+    },
+    {
+      "blockId": "ground_flat",
+      "gridX": 3,
+      "gridY": 4,
+      "rotation": 0,
+      "flip": false,
+      "variant": 0
+    },
+    {
+      "blockId": "ground_flat",
+      "gridX": 4,
+      "gridY": 4,
+      "rotation": 0,
+      "flip": false,
+      "variant": 0
+    },
+    {
+      "blockId": "slope_gentle",
+      "gridX": 5,
+      "gridY": 4,
+      "rotation": 0,
+      "flip": false,
+      "variant": 0
+    },
+    {
+      "blockId": "slope_steep",
+      "gridX": 6,
+      "gridY": 4,
+      "rotation": 0,
+      "flip": false,
+      "variant": 0
+    },
+    {
+      "blockId": "ground_flat",
+      "gridX": 8,
+      "gridY": 2,
+      "rotation": 0,
+      "flip": false,
+      "variant": 0
+    },
+    {
+      "blockId": "ground_flat",
+      "gridX": 9,
+      "gridY": 2,
+      "rotation": 0,
+      "flip": false,
+      "variant": 0
+    },
+    {
+      "blockId": "ground_flat",
+      "gridX": 12,
+      "gridY": 4,
+      "rotation": 0,
+      "flip": false,
+      "variant": 0
+    }
+  ]
+}
+

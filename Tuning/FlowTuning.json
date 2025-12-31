@@ -1,0 +1,19 @@
+{
+  "flowMax": 1.0,
+  "flowDecayPerSecond": 0.12,
+  "flowDecayPerSecondFast": 0.15,
+  "flowDecayPerSecondSlow": 0.08,
+  "idleGraceSeconds": 1.0,
+  "idleAccelerationFactor": 0.1,
+  "damageFlowPenalty": 0.25,
+  "backtrackPenaltyRate": 0.15,
+  "secretFlowGain": 0.10,
+  "carryDeliveryFlowGain": 0.15,
+  "bonusCompleteFlowGain": 0.12,
+  "puzzleClearFlowGain": 0.08,
+  "timeTierFlowGain": 0.05,
+  "chainFlowGain": 0.03,
+  "flowRewardMultiplierRange": 0.5,
+  "flowThresholdProgressMultiplier": 10.0
+}
+
