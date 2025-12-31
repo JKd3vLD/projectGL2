@@ -1,4 +1,6 @@
 using System;
+using GL2Engine.ECS;
+using GL2Engine.World;
 
 namespace GL2Engine.Inventory;
 
@@ -100,4 +102,3 @@ public enum ItemRarity
   Epic,
   Legendary
 }
-

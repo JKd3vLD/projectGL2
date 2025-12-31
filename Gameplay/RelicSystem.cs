@@ -61,14 +61,14 @@ public class RelicSystem
   {
     if (!_world.TechniqueProcStates.Has(_world.PlayerEntity))
     {
-      var procState = new TechniqueProcState
+      var newProcState = new TechniqueProcState
       {
         CooldownTimers = new float[10],
         PerSectionTriggered = new bool[10],
         ChargeCounts = new int[10],
         EquippedCount = 0
       };
-      _world.TechniqueProcStates.Add(_world.PlayerEntity, procState);
+      _world.TechniqueProcStates.Add(_world.PlayerEntity, newProcState);
     }
 
     ref var procState = ref _world.TechniqueProcStates.Get(_world.PlayerEntity);
@@ -233,4 +233,5 @@ public class RelicTuning
   public float FlowBonusPerProc { get; set; } = 0.05f;
   public int RewardQualityDelta { get; set; } = 1;
 }
+
 

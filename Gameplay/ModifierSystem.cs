@@ -115,15 +115,17 @@ public class ModifierSystem
   {
     foreach (var modifier in _activeModifiers)
     {
-      if (modifier.PoolFilters != null)
+      var filtersNullable = modifier.PoolFilters;
+      if (filtersNullable.HasValue)
       {
+        var filters = filtersNullable.Value;
         // Check if section requires disabled InteractionTags
-        if ((section.InteractionTags & modifier.PoolFilters.DisallowedInteractionTags) != 0)
+        if ((section.InteractionTags & filters.DisallowedInteractionTags) != 0)
           return false;
 
         // Check if section requires disabled TraversalMode
-        if (modifier.PoolFilters.DisallowedTraversalModes != null &&
-            modifier.PoolFilters.DisallowedTraversalModes.Contains(section.TraversalMode))
+        if (filters.DisallowedTraversalModes != null &&
+            filters.DisallowedTraversalModes.Contains(section.TraversalMode))
           return false;
       }
     }
@@ -215,4 +217,5 @@ public class ModifierTuning
   public int ModifierMaxActive { get; set; } = 3;
   public float MaxAggregateMultiplier { get; set; } = 2.0f;
 }
+
 
